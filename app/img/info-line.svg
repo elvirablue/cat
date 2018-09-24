@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 11" width="236" height="11">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="230.187" y1="10.438" x2="230.187" y2="0.938">
+			<stop offset="0" stop-color="#edc100"  />
+			<stop offset="1" stop-color="#f9e300"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffcb00 } 
+		.shp1 { fill: url(#grd1) } 
+	</style>
+	<g id="Папка 671">
+		<path id="Прямоугольник 704" class="shp0" d="M1,7h227v-1h-227z" />
+		<path id="Эллипс 706" class="shp1" d="M225,6c0,2.76 2.24,5 5,5c2.76,0 5,-2.24 5,-5c0,-2.76 -2.24,-5 -5,-5c-2.76,0 -5,2.24 -5,5z" />
+	</g>
+</svg>

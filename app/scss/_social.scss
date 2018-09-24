@@ -1,0 +1,28 @@
+.social {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transition: 0.2s ease all;
+  margin: 20px 10px 20px;
+  border: 1px solid #fff;
+  background-size: 25px auto;
+  &.inst {
+    background-image: url("../img/ico/i-inst.svg");
+
+    &:hover {
+      background-color: #fff;
+      background-image: url("../img/ico/i-inst-hover.svg");
+    }
+  }
+  &.vk {
+    background-image: url("../img/ico/i-vk.svg");
+    &:hover {
+      background-color: #fff;
+      background-image: url("../img/ico/i-vk-hover.svg");
+    }
+  }
+}

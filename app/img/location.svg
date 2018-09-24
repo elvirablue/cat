@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 23" width="19" height="23">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="10.336" y1="21.763" x2="10.336" y2="0.862">
+			<stop offset="0" stop-color="#edc100"  />
+			<stop offset="1" stop-color="#f9e300"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+	</style>
+	<path id="Фигура 1002 копия" class="shp0" d="M10,1c-4.97,0 -9,3.92 -9,8.76c0,7.28 9,13.24 9,13.24c0,0 9,-6.4 9,-13.24c0,-4.84 -4.03,-8.76 -9,-8.76z" />
+</svg>

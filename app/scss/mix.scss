@@ -1,0 +1,76 @@
+@import "blocks/bs/bootstrap.scss";
+@import "variables";
+@import "scaffolding";
+@import "bg";
+@import "modal";
+@import "input";
+@import "button";
+@import "social";
+@import "ch-wrapper";
+@import "selector";
+@import "01-fs";
+@import "00-header";
+@import "08-slider";
+@import "02-video";
+@import "03-main-form";
+@import "04-city";
+@import "05-request";
+@import "06-support";
+@import "07-packet";
+@import "09-practice";
+@import "10-data-city";
+@import "11-calc";
+@import "12-partners";
+@import "14-design";
+@import "15-plan";
+@import "16-benefit";
+@import "17-pdf";
+@import "18-workers";
+@import "20-contacts";
+
+body {
+
+}
+
+.wrapper-x {
+  overflow: hidden !important;
+  min-height: 100%;
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.wrapper-y {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  min-height: 100vh;
+ // padding-bottom: $height-footer;
+  @include media-breakpoint-down(sm) {
+    //padding-bottom: $height-footer-xs;
+  }
+}
+
+.container-fluid {
+  max-width: 1200px;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+}
+
+.sepia {
+  filter: sepia(100%);
+}
+
+.engrave {
+  filter: grayscale(100%);
+}
+
+.shadow {
+  filter: drop-shadow(0px 0px 10px rgba(133, 37, 76, 0.25));
+}

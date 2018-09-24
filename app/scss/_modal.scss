@@ -1,0 +1,136 @@
+.modal-backdrop {
+  //opacity: 0 !important;
+}
+
+#ModalThank {
+  .modal-dialog {
+    max-width: 450px;
+  }
+}
+
+.modal {
+  &.fade.show {
+    //background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &-dialog {
+    max-width: 630px;
+    @include media-breakpoint-down(xs) {
+      max-width: 90% !important;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  &-content {
+    background-color: #fff;
+    border-radius: 31px;
+    box-shadow: 8px 10px 58px 5px rgba(0, 0, 0, 0.23);
+    border: none;
+  }
+  &-header {
+    border: none;
+    padding: 0;
+    border-radius: 0 !important;
+    .close {
+      padding: 8px;
+      outline: none !important;
+      margin: 7px 7px 0 auto;
+      opacity: 1;
+      span {
+        display: block;
+        width: 30px;
+        height: 30px;
+        font-size: 0;
+        background: url("../img/modal-close.svg") no-repeat center;
+        background-size: 20px;
+      }
+    }
+  }
+  &-body {
+    padding: 0 45px 30px;
+    .ch_wrapper label {
+      text-align: left;
+    }
+    .col {
+
+    }
+    .user-input {
+      min-width: 245px;
+      max-width: none;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .button {
+      width: fit-content;
+
+      min-width: 245px;
+      margin-bottom: 10px;
+      margin-top: 20px;
+
+    }
+
+    @include media-breakpoint-down(xs) {
+      padding: 0 20px 20px;
+      .user-input {
+        display: block;
+        margin: 0 auto 10px;
+        width: 100%;
+        min-width: 220px;
+      }
+      .button {
+        width: 100%;
+        max-width: 350px;
+        margin: 10px auto;
+      }
+    }
+    .form-main {
+      max-width: 100%;
+      display: block;
+      padding: 0;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .title, .subtitle {
+      padding: 0;
+      font-size: 28px;
+      color: rgb(15, 40, 69);
+      font-weight: 300;
+      text-align: center;
+      padding-bottom: 20px;
+      text-transform: none;
+      max-width: 100%;
+      letter-spacing: normal;
+    }
+    p.after {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 300;
+      padding-bottom: 15px;
+    }
+    .list-star {
+      margin: 0 auto 40px;
+    }
+    @include media-breakpoint-down(md) {
+      .title, .subtitle {
+        font-size: 20px;
+      }
+      p.after {
+        font-size: 16px;
+      }
+    }
+    @include media-breakpoint-down(xs) {
+      .title, .subtitle {
+        font-size: 18px;
+      }
+      p.after {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+

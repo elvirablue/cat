@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 9" width="5" height="9">
+	<defs>
+		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.31   0 0 0 0 0.745   0 0 0 0 0.945   0 0 0 1 0" /> </filter>
+		<image width="154" height="250" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTQgMjUwIiB3aWR0aD0iMTU0IiBoZWlnaHQ9IjI1MCI+Cgk8c3R5bGU+CgkJdHNwYW4geyB3aGl0ZS1zcGFjZTpwcmUgfQoJCS5zaHAwIHsgZmlsbDogI2ZmZmZmZiB9IAoJPC9zdHlsZT4KCTxnIGlkPSJQYWdlIDEiPgoJCTxwYXRoIGlkPSJQYXRoIDEiIGNsYXNzPSJzaHAwIiBkPSJNNjkuNTEsMjQwLjg5aDE0Ljg0di0yNDAuNzRoLTE0Ljg0ek03Ni45MywyMjkuMDFsLTY2LjQ0LC02Ni40NGwtMTAuNSwxMC41bDY2LjQ0LDY2LjQ0bDAsMGwxMC41LDEwLjVsMCwwbDAsMGwxMC41LC0xMC41bDAsMGw2Ni40NCwtNjYuNDRsLTEwLjUsLTEwLjV6IiAvPgoJPC9nPgo8L3N2Zz4="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Векторный смарт-объект копия 12" style="filter: url(#flt1)" href="#img1" transform="matrix(-0.068,0,0,-0.075,5,9)"/>
+</svg>

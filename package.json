@@ -1,0 +1,38 @@
+{
+  "name": "cat",
+  "version": "1.0.0",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss": "^1.4.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "sass": "^1.0.0-beta.5.2"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "node gulpfile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elvirablue/cat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elvirablue/cat/issues"
+  },
+  "homepage": "https://github.com/elvirablue/cat#readme",
+  "dependencies": {
+    "npm": "^5.7.1",
+    "owl.carousel": "^2.3.4"
+  },
+  "description": ""
+}

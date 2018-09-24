@@ -1,0 +1,140 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  padding: 20px 30px;
+  white-space: nowrap;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: rgba(51,51,51,0.6);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+  width: auto;
+  height: 70px;
+  border-radius: 5px;
+  background-image: linear-gradient(0deg, #edc100 0%, #f9e300 100%);
+  box-shadow: inset 0 0 10px 1px rgba(255,255,255,0.8);
+              //0px 10px 50px -11px rgba(0,0,0,0.5);
+
+  &.arrow {
+    &:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 7px;
+      height: 11px;
+      background: url("../img/ico/i-arr-right.svg") right center no-repeat;
+      background-size: contain;
+      margin-left: 20px;
+      margin-right: -5px;
+      margin-bottom: 3px;
+    }
+  }
+  &.center {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &:hover {
+    background-image: linear-gradient(180deg, #edc100 0%, #f9e300 100%);
+
+  }
+  &:active {
+    box-shadow: inset 0 0 10px 1px rgba(0,0,0,0.1);
+  }
+  &[disabled], &[disabled]:hover, &[disabled]:active, &[disabled]:focus {
+    opacity: 0.7;
+    background-image: linear-gradient(0deg, #edc100 0%, #f9e300 100%);
+    box-shadow: inset 0 0 15px 2px rgba(255,255,255,0.8);
+  }
+  &.mono {
+    padding: 5px;
+    background-color: #ed1105;
+    box-shadow: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #ed1105;
+    }
+    &:active {
+      box-shadow: inset 2px 2px 6px 1px rgba(0,0,0,0.15);
+      color: #ed1105;
+    }
+  }
+
+
+
+  &:hover, &:active, &:focus {
+    border: none;
+    outline: none;
+    text-decoration: none;
+
+  }
+
+
+  @include media-breakpoint-down(sm) {
+    height: 55px;
+    font-size: 12px;
+  }
+}
+
+.button-box {
+  display: block;
+  width: max-content;
+  position: relative;
+  z-index: 0;
+  > .button {
+    width: 100%;
+  }
+  > .shadow {
+    display: block;
+    width: 110%;
+    height: 90px;
+    background: url("../img/bg/shadow-button-black.png") top center no-repeat;
+    position: absolute;
+    z-index: 1;
+    top: 13px;
+    left: -5%;
+    right: -5%;
+    @include media-breakpoint-down(sm) {
+      height: 70px;
+      top: 10px;
+      background-size: contain;
+    }
+  }
+  &.on-the-dark > .shadow {
+    background-image: url("../img/bg/shadow-button-yellow.png");
+  }
+}
+
+.button-link {
+  display: block;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  color: #75aaf5;
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover, &:active, &:focus {
+    outline: none;
+    border: none;
+    color: #75aaf5;
+    text-decoration: none;
+  }
+}
+
+
+

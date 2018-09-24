@@ -1,0 +1,147 @@
+.header, .footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  .left {
+    margin: 0 auto 0 0;
+    .logo {
+      display: inline-block;
+      vertical-align: middle;
+      width: 191px;
+      height: auto;
+    }
+    .text {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 230px;
+      font-size: 14px;
+      color: rgb(153, 153, 153);
+      font-weight: 300;
+      padding-left: 27px;
+      margin-left: 27px;
+      position: relative;
+      &:before {
+        content: '';
+        display: block;
+        width: 1px;
+        background-color: rgb(153, 153, 153);
+        position: absolute;
+        top: 4px;
+        bottom: 4px;
+        left: 0;
+      }
+    }
+  }
+  .right {
+    margin: 0 0 0 auto;
+    text-align: right;
+    .phone {
+      display: block;
+      padding-left: 40px;
+      background: url("../img/ico/i-phone.svg") left center no-repeat;
+      background-size: 17px 19px;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      color: currentColor;
+    }
+  }
+  .button {
+    width: auto;
+    height: auto;
+    padding: 0;
+    text-align: right;
+    text-transform: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(153, 153, 153);
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-decoration: underline;
+    &:hover, &:focus, &:active {
+      color: currentColor;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+
+  }
+
+  @include media-breakpoint-down(md) {
+    height: auto;
+    padding: 20px 0;
+    .left {
+      margin: 0 auto 0 0;
+      .logo {
+        width: 140px;
+      }
+      .text {
+        font-size: 12px;
+        padding-left: 12px;
+        margin-left: 12px;
+      }
+    }
+    .right {
+      .phone {
+        padding-left: 0;
+        background: none;
+        font-size: 18px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    flex-flow: column nowrap;
+    text-align: center;
+    padding: 10px 0;
+    .left {
+      order: 2;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .right {
+      order: 1;
+      width: 100%;
+      margin: 0 auto 10px;
+    }
+    .left .text {
+      display: block;
+      width: 100%;
+      max-width: none;
+      padding-top: 7px;
+      margin-top: 4px;
+      padding-left: 0;
+      margin-left: 0;
+      border-top: 1px solid rgba(153, 153, 153, 0.25);
+      &:before {
+        content: none;
+      }
+    }
+    .right {
+      .phone {
+        font-size: 18px;
+        text-align: center;
+      }
+      .button {
+        display: none;
+      }
+    }
+  }
+}
+
+.footer {
+  height: 160px;
+  .middle {
+    margin: 0 auto;
+    .button {
+      letter-spacing: 0;
+      font-weight: 300;
+    }
+
+  }
+}

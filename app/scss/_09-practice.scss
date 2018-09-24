@@ -1,0 +1,27 @@
+.practice {
+  padding: 100px 0 75px;
+  .subtitle {
+    max-width: 840px;
+  }
+  .row {
+    padding: 60px 0;
+  }
+  .item {
+    display: block;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    > .text {
+      display: block;
+      padding-top: 24px;
+      font-size: 18px;
+      color: rgb(102,102,102);
+      font-weight: 300;
+      .title {
+        font-size: 30px;
+        color: currentColor;
+        font-weight: bold;
+      }
+    }
+  }
+}
