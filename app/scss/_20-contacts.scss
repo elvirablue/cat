@@ -42,4 +42,45 @@
       font-weight: bold;
     }
   }
+  .map {
+    height: 625px;
+  }
+  @include media-breakpoint-down(lg) {
+
+  }
+
+  @include media-breakpoint-down(md) {
+    .contact {
+      padding-top: 40px;
+      .title {
+        display: block;
+        font-size: 13px;
+      }
+      .text {
+        display: block;
+        font-size: 16px;
+      }
+    }
+    .map {
+      height: 500px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .map {
+      height: 300px;
+
+    }
+    .block {
+      width: fit-content;
+      margin-right: auto;
+    }
+    .contact {
+      padding-top: 20px;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+
+  }
 }

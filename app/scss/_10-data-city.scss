@@ -25,17 +25,89 @@
       position: absolute;
       bottom: 45px;
       padding-left: 80px;
+      white-space: normal;
+      text-align: left;
       background: url("../img/i-green.png") left center no-repeat;
       width: max-content;
       left: 50%;
       transform: translateX(-50%);
     }
   }
+  @include media-breakpoint-down(lg) {
+    .block-diagram {
+
+
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 50px 0 20px;
+    .block-diagram {
+      padding: 50px 0 10px;
+      margin: 30px auto;
+      height: auto;
+      .info {
+        width: fit-content;
+        max-width: 80vw;
+        margin: 0 auto;
+        position: static;
+        transform: none;
+        padding-left: 50px;
+        background-size: 35px;
+        font-size: 14px;
+      }
+
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .block-diagram {
+      padding: 30px 10px;
+      margin: 20px auto;
+      .info {
+        font-size: 12px;
+        margin-top: 20px;
+        padding: 10px 10px 10px 40px;
+        background-size: 25px;
+      }
+    }
+
+  }
+
+  @include media-breakpoint-down(xs) {
+    .block-diagram {
+      width: 100vw;
+      padding: 30px 0;
+      margin: 20px -15px;
+      .info {
+        font-size: 11px;
+      }
+    }
+  }
 }
 
 .block-diagram {
   position: relative;
-  > .point {
+  > .diagram {
+    display: block;
+    width: 680px;
+    height: 340px;
+    padding: 0 0 0 16%;
+    margin: 0 auto;
+    background: url("../img/bg-diagram.png") center no-repeat;
+    background-size: contain;
+    position: relative;
+    @include media-breakpoint-down(md) {
+      width: 70vw !important;
+      height: 35vw !important;
+      padding: 0 0 0 16vw;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 82vw !important;
+      height: 41vw !important;
+    }
+  }
+   .point {
     position: absolute;
     top: 0;
     left: 0;
@@ -65,6 +137,11 @@
       color: black;
       font-size: 14px;
       text-align: left;
+      @include media-breakpoint-down(sm) {
+        width: 120px;
+        height: 45px;
+        padding: 14px;
+      }
       &:after {
         content: '';
         position: absolute;
@@ -81,11 +158,17 @@
         font-size: 14px;
         font-weight: 700;
         width: 100%;
+        @include media-breakpoint-down(sm) {
+          font-size: 12px;
+        }
       }
       p:last-child {
         font-size: 12px;
         font-weight: 400;
         width: 100%;
+        @include media-breakpoint-down(sm) {
+          font-size: 11px;
+        }
       }
     }
     &.up {

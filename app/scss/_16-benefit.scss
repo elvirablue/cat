@@ -31,4 +31,50 @@
       font-weight: 300;
     }
   }
+  @include media-breakpoint-down(lg) {
+
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+    .item {
+      margin: 0 auto 25px;
+      .img {
+        height: 90px;
+      }
+      .title {
+        padding: 20px 0 15px;
+        font-size: 16px;
+      }
+      .text {
+        font-size: 14px;
+        line-height: 1.3;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+
+  }
+
+  @include media-breakpoint-down(xs) {
+    .item {
+      margin: 0 auto 15px;
+      .img {
+        height: 70px;
+        img {
+          transform: scale(0.8);
+        }
+      }
+      .title {
+        padding: 10px 0 10px;
+        font-size: 14px;
+        line-height: 1.2;
+      }
+      .text {
+        font-size: 12px;
+        line-height: 1.2;
+      }
+    }
+  }
 }

@@ -196,9 +196,10 @@
   position: relative;
   @include media-breakpoint-down(lg) {
     background-size: cover;
+    min-height: auto;
   }
   @include media-breakpoint-down(md) {
-    background-image: none;
+    //background-image: none;
   }
 }
 

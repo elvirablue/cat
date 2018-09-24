@@ -78,4 +78,131 @@
     position: relative;
     z-index: 3;
   }
+  @include media-breakpoint-down(lg) {
+
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 50px 0 40px;
+    .t1  {
+      padding: 15px 0 40px;
+      font-size: 19px;
+      line-height: 1.3;
+    }
+    .t2 {
+      font-size: 16px;
+      line-height: 1.3;
+      margin-left: -15px;
+      margin-top: 50px;
+      padding: 5px 0 5px 90px;
+
+    }
+    .result-box {
+      width: fit-content;
+      background-size: contain;
+      .green {
+        font-size: 34px;
+        font-weight: 800;
+      }
+      .result {
+        font-size: 70px;
+        letter-spacing: 1px;
+        font-weight: 800;
+        > span {
+          font-size: 23px;
+        }
+      }
+    }
+    .nav-tabs {
+      margin-left: 0;
+      .nav-link {
+        padding: 15px 15px 25px;
+        font-size: 16px;
+      }
+    }
+    .tab-content {
+      margin-top: -10px;
+      margin-left: 0;
+      height: 440px;
+      padding: 20px 40px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .row {
+      max-width: 450px;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+    .t1  {
+      padding: 10px 0 30px;
+      font-size: 18px;
+      text-align: center;
+    }
+    .t2 {
+      font-size: 14px;
+      margin-top: 40px;
+      padding: 5px 0 5px 90px;
+    }
+    .result-box {
+      width: fit-content;
+      margin: 0 auto;
+      background-size: contain;
+      .green {
+        font-size: 28px;
+      }
+      .result {
+        font-size: 50px;
+        letter-spacing: 1px;
+        font-weight: 800;
+        > span {
+          font-size: 18px;
+        }
+      }
+    }
+    .nav-tabs {
+      margin-top: 40px;
+    }
+
+  }
+
+  @include media-breakpoint-down(xs) {
+    .row {
+      margin: 0 -15px;
+      padding-bottom: 0;
+    }
+    .t1 {
+      font-size: 16px;
+      padding-bottom: 20px;
+    }
+    .t2 {
+      font-size: 12px;
+      padding: 10px 10px 10px 70px;
+      background-size: 65px auto;
+      margin-top: 20px;
+    }
+    .result-box {
+      .green {
+        font-size: 22px;
+      }
+      .result {
+        font-size: 40px;
+        letter-spacing: 0;
+        > span {
+          font-size: 16px;
+        }
+      }
+    }
+    .nav-tabs {
+      margin-top: 20px;
+      .nav-link {
+        font-size: 14px;
+        line-height: 1;
+      }
+    }
+    .tab-content {
+      height: 440px;
+      padding: 10px 20px;
+    }
+  }
 }

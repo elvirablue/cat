@@ -4,7 +4,7 @@
     font-size: 18px;
     letter-spacing: 2px;
     line-height: 2;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -30,7 +30,7 @@
     .t1 {
       font-size: 12px;
       letter-spacing: 1px;
-      color: rgb(153,153,153);
+      color: rgb(153, 153, 153);
       font-weight: bold;
       text-align: center;
     }
@@ -39,6 +39,64 @@
       bottom: 0;
       left: 50%;
       margin-left: -780px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .block-white {
+      .decor {
+        bottom: 0;
+        left: 50%;
+        margin-left: -65vw;
+        width: 55vw;
+      }
+    }
+
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 40px;
+    .title {
+      font-size: 16px;
+    }
+    .block-white {
+      margin: 10px auto 0;
+      padding: 45px 120px 31px;
+      h2 {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .decor {
+      display: none;
+    }
+    .title {
+      font-size: 14px;
+    }
+    .block-white {
+      padding: 30px;
+      h2 {
+        font-size: 22px;
+      }
+    }
+
+  }
+
+  @include media-breakpoint-down(xs) {
+    .block-white {
+      padding: 20px 10px;
+      h2 {
+        font-size: 18px;
+      }
+      .button-box {
+        margin: 20px auto 20px;
+        min-width: auto;
+        width: 100%;
+        .button {
+          padding: 20px 10px;
+        }
+      }
     }
   }
 }

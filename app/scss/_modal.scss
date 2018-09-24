@@ -1,29 +1,35 @@
 .modal-backdrop {
-  //opacity: 0 !important;
+  opacity: 0 !important;
 }
 
 #ModalThank {
   .modal-dialog {
-    max-width: 450px;
+    max-width: 430px;
+  }
+}
+
+#ModalPolitica {
+  .modal-dialog {
+    max-width: 650px;
   }
 }
 
 .modal {
   &.fade.show {
-    //background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
   }
 
   &-dialog {
-    max-width: 630px;
+    max-width: 430px;
     @include media-breakpoint-down(xs) {
-      max-width: 90% !important;
+      max-width: 95% !important;
       margin-right: auto;
       margin-left: auto;
     }
   }
   &-content {
     background-color: #fff;
-    border-radius: 31px;
+    border-radius: 10px;
     box-shadow: 8px 10px 58px 5px rgba(0, 0, 0, 0.23);
     border: none;
   }
@@ -61,7 +67,7 @@
       margin-bottom: 20px;
     }
     .button {
-      width: fit-content;
+      width: 100%;
 
       min-width: 245px;
       margin-bottom: 10px;
@@ -83,7 +89,7 @@
         margin: 10px auto;
       }
     }
-    .form-main {
+    .form-modal {
       max-width: 100%;
       display: block;
       padding: 0;
@@ -91,12 +97,11 @@
       text-align: center;
     }
     .title, .subtitle {
-      padding: 0;
-      font-size: 28px;
-      color: rgb(15, 40, 69);
-      font-weight: 300;
-      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: currentColor;
       padding-bottom: 20px;
+      text-align: center;
       text-transform: none;
       max-width: 100%;
       letter-spacing: normal;
@@ -128,6 +133,9 @@
       }
       p.after {
         font-size: 14px;
+      }
+      .ch_wrapper {
+        margin-right: -10px;
       }
     }
   }

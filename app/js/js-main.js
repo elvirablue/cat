@@ -135,7 +135,17 @@ owl2.owlCarousel({
   responsiveClass:true,
   dotsEach: true,
   navigation : true,
-  items: 3
+  responsive: {
+    0: {
+      items: 1
+    },
+    576: {
+      items: 2
+    },
+    768: {
+      items: 3
+    }
+  }
 });
 
 
